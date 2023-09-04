@@ -6,6 +6,7 @@ Documentacion de la API RESTful de frutas. Esta API proporciona el acceso a una 
 
 - [Documentacion de la API RESTful de frutas](#documentacion-de-la-api-restful-de-frutas)
   - [Sumario](#sumario)
+  - [Configuracion de conexion a MongoDB en el archivo .env](#configuracion-de-conexion-a-mongodb-en-el-archivo-env)
     - [1. OBtener coleccion de frutas](#1-obtener-coleccion-de-frutas)
     - [2. Agregar fruta](#2-agregar-fruta)
     - [3. Modificar fruta](#3-modificar-fruta)
@@ -21,6 +22,15 @@ Para utilizar la API, se puedem realizar solicitudes a la URL base mencionada an
 - **POST**: Para agregar una nueva fruta a la coleccion.  
 - **PUT**: Para actualizar la informacion de una fruta existente en la coleccion.
 - **DELETE**: Para eliminar una fruta de la coleccion.
+
+## Configuracion de conexion a MongoDB en el archivo .env
+EL archivo '.env' es una parte fundamental de la configuracion de la API. Contiene variables de entorno para la conexion a la base de datos y el puerto a usar.
+A continuacion se muestra un ejemplo del conteido.
+**ejemplo de configuracion del archivo .env:**
+```dotenv
+    PORT=3008
+    MONGODB_STRING=mongodb+srv://user:password@cluster0.o7xxx.mongodb.net/?retryWrites=true$w=majority
+```
 
 
 ### 1. OBtener coleccion de frutas
