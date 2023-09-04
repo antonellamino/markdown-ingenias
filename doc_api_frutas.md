@@ -100,7 +100,7 @@ A continuacion se muestra un ejemplo del conteido.
 | DELETE | `/localhost:3008/api/v1/frutas/:id`      |
 
 ## Diagrama de flujo representativo de la interaccion de un cliente con la API
-::: mermaid
+``` mermaid
 graph TD;
   subgraph "Cliente";
     A[Cliente] -->|Realiza solicitudes HTTP| B[API de Frutas];
@@ -108,4 +108,4 @@ graph TD;
   subgraph "API de Frutas";
     B -->|Accede a datos de frutas| D[Base de Datos de Frutas];
   end
-  :::
+```
